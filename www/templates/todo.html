@@ -1,0 +1,13 @@
+<ion-view title="Todo" ng-init="list()">
+        <ion-nav-buttons side="right">
+            <button class="button icon-left icon ion-plus-circled" ng-click="create()">Add</button>
+            <button class="button icon-right icon ion-log-out" ng-click="signOff()">Sign Out</button>
+        </ion-nav-buttons>
+        <ion-content>
+            <div class="list">
+                <div ng-repeat="todo in data.todos" class="item">
+                    {{todo.title}}
+                </div>
+            </div>
+        </ion-content>
+    </ion-view>
